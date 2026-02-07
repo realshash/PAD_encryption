@@ -4,7 +4,7 @@ import random as rnd
 def encrypt(text):
     result = ""
     for i in text:
-        choice = rnd.randint(1, 3)
+        choice = rnd.randint(1, 5)
         with open(f"noise{choice}.txt", "r") as f:
             noise = f.read() * 5
             f.seek(0)
